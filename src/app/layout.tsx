@@ -8,7 +8,7 @@ import Script from "next/script";
 import TidioScript from "./TidioScript";
 import NextTopLoader from "nextjs-toploader";
 import localFont from "next/font/local";
-
+import { Analytics } from "@vercel/analytics/react";
 import config from "@/types/Config";
 
 const alibaba = localFont({
@@ -37,18 +37,14 @@ const alibaba = localFont({
   display: "swap",
 });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   const apiUrl = config.apiUrl;
   return (
     <html className="scroll-smooth" lang="en">
-
       <body className={alibaba.className}>
         <Toaster richColors position="top-right" />
         <NextTopLoader color="#FF6500" showSpinner={false} />
@@ -72,8 +68,9 @@ export default function RootLayout({
           `}
         </Script> */}
         {/* {apiUrl && apiUrl.includes("https://api.alifaedtech.com") && ( */}
-          <TidioScript />
+        <TidioScript />
         {/* )} */}
+        <Analytics />
       </body>
     </html>
   );
