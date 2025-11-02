@@ -1,0 +1,55 @@
+.placeholder-gray::placeholder {
+  color: #808080;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.react-tel-input .flag-dropdown {
+  width: 66px;
+  border-radius: 15% 0 0 15%;
+  background-color: white;
+}
+
+.selected-flag {
+  margin-left: 10px;
+}
+
+.react-tel-input .selected-flag .arrow {
+  top: 50%;
+  margin-top: -3px;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  border-top: 6px solid #ff6500;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.react-tel-input .selected-flag .arrow.up {
+  top: 50%;
+  margin-top: -5px;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 6px solid #ff6500;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+div[role="dialog"][data-slot="base"] {
+  background-color: transparent !important;
+}
+
+div[role="dialog"][data-slot="base"]::before {
+  display: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  content: none !important;
+}

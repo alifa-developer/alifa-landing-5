@@ -1,0 +1,48 @@
+export const profileDropdowns = [
+  {
+    id: 1,
+    alt: 'Profile',
+    src: '/navbar/profile.svg',
+    src2: '/navbar/profile-orange.svg',
+    src3: '/navbar/profile-black.svg',
+    label: 'Profile',
+    href: '/my-account',
+  },
+  {
+    id: 2,
+    alt: 'Preferences',
+    src: '/navbar/preferences.svg',
+    src2: '/navbar/preferences-orange.svg',
+    src3: '/navbar/preferences-black.svg',
+    label: 'Preferences',
+    href: '/my-account/preferences',
+  },
+  {
+    id: 3,
+    alt: 'Favorites',
+    src: '/navbar/favorites.svg',
+    src2: '/navbar/favorites-orange.svg',
+    src3: '/navbar/favorites-black.svg',
+    label: 'Favorites',
+    href: '/my-account/favorites',
+  },
+  {
+    id: 4,
+    alt: 'Compare Schools',
+    src: '/navbar/compare.svg',
+    src2: '/navbar/compare-orange.svg',
+    src3: '/navbar/compare-black.svg',
+    label: 'Compare Schools',
+    href: '/my-account/compare',
+  },
+    {
+    id: 5,
+    alt: 'Assessment Form',
+    src: '/navbar/compare.svg',
+    src2: '/navbar/compare-orange.svg',
+    src3: '/navbar/compare-black.svg',
+    label: 'Assessment Form',
+    href: '/assessment-form',
+  },
+  
+];

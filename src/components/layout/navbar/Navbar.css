@@ -1,0 +1,16 @@
+.navbar-black {
+    background: black;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-black {
+        background: black;
+        color: white;
+    }
+  }
+
+.navbar-white {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+}

@@ -1,0 +1,47 @@
+.noScrollButtons {
+  /* Hide scroll buttons in Firefox/IE legacy as much as possible */
+  -ms-overflow-style: auto; /* IE/Edge legacy */
+  scrollbar-width: thin; /* Firefox (no arrows anyway) */
+}
+
+/* WebKit-based browsers: hide the scrollbar buttons/arrows */
+.noScrollButtons::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Extra specificity for some WebKit implementations */
+.noScrollButtons::-webkit-scrollbar-button:start:decrement,
+.noScrollButtons::-webkit-scrollbar-button:end:increment,
+.noScrollButtons::-webkit-scrollbar-button:vertical:increment,
+.noScrollButtons::-webkit-scrollbar-button:vertical:decrement,
+.noScrollButtons::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.scrollTransparent {
+  /* Firefox
+  scrollbar-width: thin;                           */
+  scrollbar-color: rgba(255, 255, 255, 0.35) transparent; 
+}
+
+.scrollTransparent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollTransparent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollTransparent::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.35); 
+  border-radius: 9999px;
+}
+
+.scrollTransparent:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+

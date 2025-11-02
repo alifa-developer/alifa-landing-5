@@ -1,0 +1,113 @@
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  /* transition: all 0.3s ease; */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f97316 !important; /* your orange */
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+/* Position pagination nicely below */
+.swiper-pagination {
+  bottom: 3rem !important;
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination {
+    bottom: 1rem !important;
+  }
+}
+@media (min-width: 1526px) {
+  .swiper-pagination {
+    bottom: 3rem !important;
+  }
+}
+
+
+.custom-prev,
+.custom-next {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.custom-pagination.swiper-pagination-bullets {
+  position: absolute !important;
+  left: 53% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+
+
+@media (min-width: 360px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom: 4rem !important;
+    left: 50% !important;
+  }
+}
+
+
+
+/* lg ≥ 1024px */
+@media (min-width: 1024px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom: 4rem !important;
+    left: 53% !important;
+  }
+}
+
+/* xl ≥ 1280px */
+@media (min-width: 1280px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom: 8rem !important;
+  }
+}
+@media (min-width: 1456px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom: 8rem !important;
+  }
+}
+ @media (min-width: 1536px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom: 6rem !important;
+  }
+} 
+
+ @media (min-width: 1744px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom:8rem !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .custom-pagination.swiper-pagination-bullets {
+    bottom:9rem !important;
+  }
+}
+/* 2xl ≥ 1536px */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: none !important;
+  top: none !important;
+  left: none !important;
+  width: none !important;
+}

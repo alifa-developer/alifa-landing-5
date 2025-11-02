@@ -1,0 +1,22 @@
+.placeholder-gray::placeholder {
+    color: #808080;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  input[type=number]{
+    -moz-appearance: textfield;
+}
+@media (min-width: 1536px) and (max-width: 1664px) {
+  .text-60px-custom {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1665px) {
+  .text-70px {
+    font-size: 70px;
+  }
+}
