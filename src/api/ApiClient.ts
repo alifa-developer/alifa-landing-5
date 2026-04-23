@@ -7,6 +7,7 @@ import { buildFetchOptions, getRefreshAuthHeader } from "./RequestBuilder";
 import { TokensWithId } from "@/types/User";
 import { trimChar } from "@/utils/StringUtils";
 
+
 const callRefreshToken = async () => {
   const refreshRequest = call<TokensWithId>(
     HttpMethod.post,
