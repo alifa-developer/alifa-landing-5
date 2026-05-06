@@ -10,9 +10,9 @@ interface Day {
 }
 
 const OurProcess = () => {
-  const today = new Date().toISOString().split("T")[0];
-  const tidyCalPath = config.tidyCalPath || "publisher/standard-minute-meeting";
-  const tidyCalUrl = `https://tidycal.com/${tidyCalPath}?date=${today}`;
+  // const today = new Date().toISOString().split("T")[0];
+  // const tidyCalPath = config.tidyCalPath || "publisher/standard-minute-meeting";
+  const tidyCalUrl = `https://tidycal.com/publisher`;
 
   return (
     <section className="max-w-[1920px] mx-auto w-full bg-white py-12">

@@ -21,9 +21,9 @@ const AboutFooter = () => {
   const handleDayClick = (day: Day) => {
     if (!day.isCurrentMonth) return;
 
-    const selectedDate = day.date.toISOString().split("T")[0];
-    const tidyCalPath = config.tidyCalPath || "publisher/standard-minute-meeting";
-    const tidyCalUrl = `https://tidycal.com/${tidyCalPath}?date=${selectedDate}`;
+    // const selectedDate = day.date.toISOString().split("T")[0];
+    // const tidyCalPath = config.tidyCalPath || "publisher/standard-minute-meeting";
+    const tidyCalUrl = `https://tidycal.com/publisher`;
     window.open(tidyCalUrl, "_blank");
   };
 
